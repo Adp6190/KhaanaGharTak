@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with KhanaGharTak - A food delivery application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 To change directories
 ### `cd <foldername>`
