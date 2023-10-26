@@ -15,7 +15,7 @@ class OnlineShoppingApplicationTests {
 	
 	@Test
 	void findProductById(int id);
-	Product product=new Product(1,"paneer","veg","200");
+	Product product=new Product(1,"paneer","veg",200);
 	productRepository.save(product);
 
 	Boolean actualResult=productRepository.findProductById(1);
