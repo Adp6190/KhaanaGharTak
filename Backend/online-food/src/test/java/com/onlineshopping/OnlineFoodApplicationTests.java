@@ -21,6 +21,19 @@ class OnlineShoppingApplicationTests {
 	Boolean actualResult=productRepository.findProductById(1);
 
 	assertThat(actualResult).isTrue();
+
+
+	@AfterEach
+	void tearDown(){
+	prodcutRepository.deleteAll();
+	System.out.println("Tearing down");
+	}
+
+	
+	@BeforeEach
+	void setUp(){
+	System.out.println("Setting up");
+	}
 	
 	
 }
