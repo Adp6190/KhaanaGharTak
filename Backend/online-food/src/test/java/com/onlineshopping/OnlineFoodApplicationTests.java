@@ -10,4 +10,17 @@ class OnlineShoppingApplicationTests {
 	void contextLoads() {
 	}
 
+	@Autowired
+	private ProductRepository productRepository;
+	
+	@Test
+	void findProductById(int id);
+	Product product=new Product(1,"paneer","veg","200");
+	productRepository.save(product);
+
+	Boolean actualResult=productRepository.findProductById(1);
+
+	assertThat(actualResult).isTrue();
+	
+	
 }
