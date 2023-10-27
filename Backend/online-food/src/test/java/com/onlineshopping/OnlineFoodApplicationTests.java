@@ -14,14 +14,14 @@ class OnlineShoppingApplicationTests {
 	private ProductRepository productRepository;
 	
 	@Test
-	void findProductById(int id);
+	void findProductById(int id){
 	Product product=new Product(1,"paneer","veg",200);
 	productRepository.save(product);
 
 	Boolean actualResult=productRepository.findProductById(1);
 
 	assertThat(actualResult).isTrue();
-
+	}
 
 	@AfterEach
 	void tearDown(){
